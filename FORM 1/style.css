@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Courgette", cursive;
+}
+.con {
+  width: 100%;
+  height: 100vh;
+  background-image: url(first.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.in1 {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgb(87, 53, 120);
+  border-radius: 20px;
+  width: 75%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.text {
+  width: 45%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: auto;
+  text-align: center;
+}
+.text h1 {
+  font-size: 3.1rem;
+  line-height: 75px;
+  text-transform: capitalize;
+}
+.text p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 0.7rem;
+  font-family: "Courgette", cursive;
+}
+.for {
+  /* border: 2px solid red;/ */
+  width: 35%;
+  height: 70%;
+  padding: 10px;
+  /* justify-content:center; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 300px;
+}
+.for form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+.for form input {
+  background: transparent;
+  margin: 5.5%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid royalblue;
+  width: 70%;
+  padding: 5px;
+  padding-bottom: 2px;
+  font-size: larger;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.8s;
+  color: rgb(133, 60, 201);
+}
+form input:focus {
+  color: aquamarine;
+  transition: 1s;
+  transform: translateY(-5px);
+  border-radius: 5px;
+}
+button {
+  width: 50%;
+  padding: 8px 18px;
+  margin: 20px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+  border: none;
+  color: azure;
+  background-color: darkviolet;
+  opacity: 0.8;
+  font-weight: 700;
+  transition: 1s;
+}
+button:hover{
+    color: blueviolet;
+    background-color: azure;
+
+}

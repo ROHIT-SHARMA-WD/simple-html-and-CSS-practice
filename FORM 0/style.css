@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(bg.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  text-transform: capitalize;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.out {
+  backdrop-filter: blur(10px);
+  width: 30%;
+  height: 70%;
+  /* border: 1px solid red; */
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  transition: 1s;
+}
+
+.out:hover {
+  box-shadow: 0px -0.2px 40px 3px rgb(14, 14, 14);
+}
+
+.out .first h1 {
+  align-items: center;
+  font-size: 3.5rem;
+  color: rgb(209, 209, 209);
+  font-weight: 900;
+  margin: 10px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.out form .text {
+  margin: 30px;
+  padding-bottom: 0;
+  border-bottom: 2px solid rgb(255, 255, 255);
+  position: relative;
+}
+
+.out form .text input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 2rem;
+  height: 50px;
+  padding: 0px 8% 0px 8px;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
+.out form .text input:focus~label,
+.out form .text input:invalid~label {
+  transition: 2s;
+  top: -15px;
+  color: beige;
+  text-transform: uppercase;
+}
+
+.out form .text label {
+  position: absolute;
+  bottom: 10px;
+  left: 2px;
+  transition: 5s;
+  text-transform: capitalize;
+  color: rgb(255, 255, 255);
+}
+
+.out form .text .i {
+  position: absolute;
+  right: 2px;
+  bottom: 10px;
+  color: aliceblue;
+}
+
+.out .medel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: larger;
+  /* border: 1px solid red; */
+}
+
+.out .medel label {
+  color: rgb(255, 255, 255);
+}
+
+.out .medel a {
+  text-decoration: none;
+  color: rgb(255, 239, 211);
+  border-bottom: 1px solid;
+  font-weight: bolder;
+}
+
+.out .sub button {
+  width: 85%;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding: 10px 46px;
+  font-size: larger;
+  border: none;
+  outline: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 500ms;
+}
+
+.out .sub button:hover {
+  background-color: rgb(45, 45, 45);
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: absolute;
+  bottom: 5px; */
+
+  margin: 35px auto 0px auto;
+}
+
+.footer span {
+  color: azure;
+}
+
+.footer a {
+  text-decoration: none;
+  color: rgb(255, 239, 211);
+  margin-left: 10px;
+  border-bottom: 1px solid;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+  
+@media only screen and (min-width: 0px) and (max-width: 500px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+
+  .out {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px;
+  }
+}
+@media only screen and (min-width: 500px) and (max-width: 1000px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+
+  .out {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1300px) {
+  body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(bg.png) no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    text-transform: capitalize;
+    box-sizing: border-box;
+  }
+
+  .out {
+    width: 50%;
+    height:auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}

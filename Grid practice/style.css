@@ -1,0 +1,86 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Courgette", cursive;
+}
+.outer{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-Gradient(to right, rgb(0, 116, 148), rgba(60, 13, 212, 0.826));
+    overflow:hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+
+.text{
+    
+    width: 20%;
+    height: fit-content;
+    text-align: center;
+}
+h1{
+    text-transform: capitalize;
+    font-weight: 900;
+    line-height: 4.5rem;
+    font-size: 2.8rem;
+}
+p{
+    font-weight: 400;
+    font-size: medium;
+    letter-spacing: 1px;
+}
+
+
+
+
+
+.photo{
+    /* border: 2px solid; */
+    width: 60%;
+    height: 80%;
+    display:grid;
+    gap: 5px;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-content:center;
+}
+.ph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aquamarine;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-position:bottom;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.701);
+    background-blend-mode: hard-light;
+    transition: 1s;
+}
+.ph:hover{
+    background-blend-mode:multiply;
+    background-position:center;
+    background-size: cover;
+    background-color: rgb(255, 255, 255, 0.8);
+
+}
+.r{
+    grid-row:span 2;
+}
+.c{
+    grid-column: span 2;
+}
+.t{
+    grid-column: span 3;
+}
+.y{
+    background-position:left ;
+}
